@@ -5,6 +5,7 @@ import SendMoney from './SendMoney';
 export default function Transactions() {
     const { iban } = useParams();
     const [data, setData] = useState([]);
+    const [refresh, setRefresh] = useState(false);
 
     useEffect(() => {
         async function fetchData() {
@@ -16,7 +17,7 @@ export default function Transactions() {
             setData(data);
         }
         fetchData();
-    }, [iban]);
+    }, [iban, refresh]);
 
     async function handleSent(data) {
         try {
@@ -42,6 +43,7 @@ export default function Transactions() {
 
             const result = await response.json();
             console.log('Success:', result);
+            setRefresh(prev => !prev);
             // Handle the successful response here
         } catch (error) {
             console.error('Error:', error);
