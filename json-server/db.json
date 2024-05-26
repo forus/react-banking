@@ -1,7 +1,7 @@
 {
   "accounts": [
     { "iban": "NL91RABO0315273627", "name": "My Current Account", "owner": "john@doe.com" },
-    { "iban": "NL27RABO0123456789", "title": "My Savings Account", "owner": "john@doe.com" }
+    { "iban": "NL27RABO0123456789", "name": "My Savings Account", "owner": "john@doe.com" }
   ],
   "transactions": [
     { "id": "1", "from_iban": "NL91RABO0315273627", "to_iban": "NL27RABO0123456789", "datetime": "2024-05-25T14:30:00Z", "amount": 150.75, "currency": "EUR", "description": "Grocery shopping in A&H", "category": "Groceries" },
