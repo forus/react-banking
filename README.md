@@ -17,3 +17,11 @@ Run the following command.
 ```
 npx create-react-app react-banking
 ```
+
+## 3. Add routing library
+
+To add routing library
+
+```
+npm install react-router-dom
+```

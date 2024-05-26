@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function MyBankAccounts() {
     const [data, setData] = useState([]);
@@ -21,7 +22,7 @@ export default function MyBankAccounts() {
             <p>Below you can find all bank accounts:</p>
             {data.map((account) =>
                 <p>
-                    <a href={`/accounts/${account.iban}/transactions`}>{account.name}</a><small>{account.iban}</small>
+                    <Link to={`/accounts/${account.iban}/transactions`}>{account.name}</Link><small>{account.iban}</small>
                 </p>
             )}
         </section>
