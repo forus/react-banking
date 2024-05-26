@@ -13,6 +13,9 @@ export default function SendMoney({ onSent }) {
       amount,
       description
     };
+    setIban('');
+    setAmount('');
+    setDescription('');
     onSent(formData);
   };
 
