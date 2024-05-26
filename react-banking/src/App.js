@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
         <header>
-            <h1>Header</h1>
+            <h1>React Banking</h1>
         </header>
         <main>
             <section>
